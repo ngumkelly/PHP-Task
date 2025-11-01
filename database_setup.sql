@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS portfolio_blog;
+
+USE portfolio_blog;
+
+CREATE TABLE IF NOT EXISTS blogs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    image VARCHAR(255) DEFAULT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
